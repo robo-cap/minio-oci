@@ -18,6 +18,7 @@ Run the following command to run the latest stable image of MinIO as a container
 
 ```sh
 git clone https://github.com/robo-cap/minio-oci
+cd minio-oci
 go install -v
 ls ~/go/bin/minio
 ```
