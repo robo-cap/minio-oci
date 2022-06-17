@@ -6,7 +6,7 @@ Using [OCI S3 Compatibility API](https://docs.oracle.com/en-us/iaas/Content/Obje
 
 By default, MINIO running in S3 gateway mode is able to access only buckets in home region.
 
-When `MINIO_GW_REGION` environment variable is configured, users can access buckets created in other OCI regions. (The region within OCI S3 compatible endpoint URL should match region defined using MINIO_GW_REGION environmnet variable)
+When `MINIO_GW_REGION` environment variable is configured, users can access buckets created in other OCI regions. (The region within OCI S3 compatible endpoint URL should match region defined using `MINIO_GW_REGION` environmnet variable)
 
 ## Prerequisite
 
