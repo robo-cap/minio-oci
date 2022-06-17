@@ -29,11 +29,11 @@ ls ~/go/bin/minio
 
 Navigate to User Profile settings using the icon on top right in OCI console.
 
-[/images/user_profile.png]
+![User profile](/images/user_profile.png)
 
 Under *Customer Secret Keys* section, click on *Generate Secret Key*. Save the Secret key from the displayed popup and Access key from the table with user secret keys (second column).
 
-[/images/secret_keys.png]
+![User profile](/images/secret_keys.png)
 
 ## Deployment
 
