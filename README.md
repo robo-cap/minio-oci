@@ -49,7 +49,7 @@ minio gateway s3 https://<tenancy_namespace>.compat.objectstorage.<oci_region>.o
 
 ### IAM
 
-Note that user credentials and policies are ephemeral. For persistent IAM you need to setup (etcd)[https://github.com/minio/minio/blob/master/docs/sts/etcd.md]
+Note that user credentials and policies are ephemeral. For persistent IAM you need to setup [etcd](https://github.com/minio/minio/blob/master/docs/sts/etcd.md)
 
 ### User policy example
 
