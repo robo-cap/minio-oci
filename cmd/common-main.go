@@ -252,6 +252,8 @@ func initConsoleServer() (*restapi.Server, error) {
 		Path: globalCertsCADir.Get(),
 	}
 
+	restapi.GlobalRootCAs, restapi.GlobalPublicCerts, restapi.GlobalTLSCertsManager = globalRootCAs, globalPublicCerts, globalTLSCerts
+	
 	swaggerSpec, err := loads.Embedded(restapi.SwaggerJSON, restapi.FlatSwaggerJSON)
 	if err != nil {
 		return nil, err
@@ -271,8 +273,6 @@ func initConsoleServer() (*restapi.Server, error) {
 	server := restapi.NewServer(api)
 	// register all APIs
 	server.ConfigureAPI()
-
-	restapi.GlobalRootCAs, restapi.GlobalPublicCerts, restapi.GlobalTLSCertsManager = globalRootCAs, globalPublicCerts, globalTLSCerts
 
 	consolePort, _ := strconv.Atoi(globalMinioConsolePort)
 
